@@ -46,6 +46,7 @@
             {lat: 10.777583297879925,lng: 106.70660543740647, name: "Bảo tàng Tôn Đức Thắng"},
             {lat: 10.769077091752367,lng: 106.70674696718258, name: "Bến Nhà Rồng - Bảo tàng Hồ Chí Minh"},
             {lat: 10.780227286297539,lng: 106.69196285184316, name: "Bảo tàng Chứng tích Chiến tranh"},
+            {}
         ];
 
         let routingControl = null;
@@ -109,7 +110,7 @@
         const locateButton = L.control({position: 'topright'});
         locateButton.onAdd = function() {
             this.div = L.DomUtil.create('div', 'map-control');
-            this.div.innerHTML = '<button onclick="locateUser()">Locate Me</button>';
+            this.div.innerHTML = '<button onclick="locateUser()">Vị trí của tôi</button>';
             return this.div;
         };
         locateButton.addTo(map);
@@ -121,7 +122,7 @@
                     const userLocation = [position.coords.latitude, position.coords.longitude];
                     map.setView(userLocation, 15);
                     L.marker(userLocation).addTo(map)
-                        .bindPopup("Your Location").openPopup();
+                        .bindPopup("Vị trí hiện tại").openPopup();
                 });
             }
         }
