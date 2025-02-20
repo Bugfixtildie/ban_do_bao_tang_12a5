@@ -18,7 +18,8 @@ const places = [
     {lat: 10.800159632489438, lng: 106.66620205274626, name: "Bảo tàng Lực lượng Vũ trang Miền Đông Nam Bộ"},
     {lat: 10.777583297879925, lng: 106.70660543740647, name: "Bảo tàng Tôn Đức Thắng"},
     {lat: 10.769077091752367, lng: 106.70674696718258, name: "Bến Nhà Rồng - Bảo tàng Hồ Chí Minh"},
-    {lat: 10.780227286297539, lng: 106.69196285184316, name: "Bảo tàng Chứng tích Chiến tranh"}
+    {lat: 10.780227286297539, lng: 106.69196285184316, name: "Bảo tàng Chứng tích Chiến tranh"},
+    {lat: 10.862374124774021,lng: 106.724050189887, name:"Bún bò Khôi"}
 ];
 
 let routingControl = null;
